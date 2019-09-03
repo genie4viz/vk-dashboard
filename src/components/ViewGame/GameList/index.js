@@ -23,8 +23,8 @@ const data = [
         title: 'My Game #4',
         ipaddress: '192.168.5.50',
         port: 32500
-    },
-  ];
+    }
+];
   
 
 export const GameList = () => {

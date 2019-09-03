@@ -28,15 +28,15 @@ export const GameHeader = () => {
                 onOk={handleOk}
                 onCancel={handleCancel}
                 >
-                    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 4}}>
+                    <div className="modalItemWrapper">
                         <span>Title:</span>
                         <Input placeholder="title" style={{width: 350}}/>
                     </div>
-                    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 4}}>
+                    <div className="modalItemWrapper">
                         <span>IP Address:</span>
                         <Input placeholder="ip address" style={{width: 350}}/>
                     </div>
-                    <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 4}}>
+                    <div className="modalItemWrapper">
                         <span>Port: </span>
                         <Input placeholder="port number" style={{width: 350}}/>
                     </div>
