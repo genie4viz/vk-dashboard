@@ -1,11 +1,31 @@
 import React from 'react';
-import { DatePicker } from 'antd';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Layout } from 'antd';
+import { MenuSider, ViewGameContainer, Profile, Billing } from '../../components';
+import './index.css';
+
+const { Header, Footer, Content } = Layout;
 
 function App() {
+
   return (
-    <div className="App">
-      <DatePicker />
-    </div>    
+    <BrowserRouter>
+        <Layout style={{ minHeight: '100vh' }}>
+          <MenuSider />
+          <Layout>
+            <Header className="header-description">VK Dashboard Title</Header>         
+            <Content>              
+              <Switch>
+                <Route exact path='/viewgame' component={ViewGameContainer} />
+                <Route exact path='/profile' component={Profile} />
+                <Route exact path='/billing' component={Billing} />
+                <Redirect to='/viewgame' />
+              </Switch>              
+            </Content>
+            <Footer className="footer-description">Copyright@ 2019</Footer>
+          </Layout>      
+        </Layout>
+      </BrowserRouter>   
   );
 }
 
