@@ -16,9 +16,9 @@ function App() {
             <Header className="header-description">VK Dashboard Title</Header>         
             <Content>              
               <Switch>
-                <Route exact path='/viewgame' component={ViewGameContainer} />
-                <Route exact path='/profile' component={Profile} />
-                <Route exact path='/billing' component={Billing} />
+                <Route path='/viewgame' component={ViewGameContainer} />
+                <Route path='/profile' component={Profile} />
+                <Route path='/billing' component={Billing} />
                 <Redirect to='/viewgame' />
               </Switch>              
             </Content>
