@@ -2,9 +2,10 @@
   "name": "vk-dashboard",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {        
+  "dependencies": {
+    "antd": "^3.23.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",    
+    "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
     "react-scripts": "3.0.1",
